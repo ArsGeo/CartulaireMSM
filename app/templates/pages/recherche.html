@@ -1,0 +1,160 @@
+{% extends "conteneur.html" %}
+
+{% block afternav %}
+    {% include "partials/cart.html" %}
+{%endblock%}
+
+{% block titre %}| {{titre}}{%endblock%}
+
+{% block corps %}
+
+    <h1>{{titre}}</h1>
+    {% if resultats %}
+        <p/>
+        <p>Il y a {{resultats.total}} acte(s) qui répond(ent) à votre requête :</p>
+        <ul>
+            {% for acte in resultats.items %}
+                <li><a href="{{url_for('acte', acte_id=acte.acte_id)}}">{{acte.acte_titre}}</a></li>
+            {% endfor %}
+        </ul>
+    <nav aria-label="research-pagination">
+      <ul class="pagination">
+        {%- for page in resultats.iter_pages() %}
+            {% if page %}
+
+              {% if page != resultats.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('recherche', keyword=keyword, page=page) }}">{{page}}</a>
+                </li>
+              {% else %}
+                <li class="page-item active disabled">
+                  <a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+                </li>
+              {% endif %}
+
+            {% else %}
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+            {% endif %}
+        {%- endfor %}
+        {% elif resultats_dates %}
+        <p/>
+        <p>Il y a {{resultats_dates.total}} acte(s) qui répond(ent) à votre requête :</p>
+        <ul>
+            {% for acte in resultats_dates.items %}
+                <li><a href="{{url_for('acte', acte_id=acte.acte_id)}}">{{acte.acte_titre}}</a></li>
+            {% endfor %}
+        </ul>
+    <nav aria-label="research-pagination">
+      <ul class="pagination">
+        {%- for page in resultats_dates.iter_pages() %}
+            {% if page %}
+
+              {% if page != resultats_dates.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('recherche', acte_date=acte_date, page=page) }}">{{page}}</a>
+                </li>
+              {% else %}
+                <li class="page-item active disabled">
+                  <a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+                </li>
+              {% endif %}
+
+            {% else %}
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+            {% endif %}
+        {%- endfor %}
+        {% elif resultats_abbatiat %}
+        <p/>
+        <p>Il y a {{resultats_abbatiat.total}} acte(s) qui répond(ent) à votre requête :</p>
+        <ul>
+            {% for acte in resultats_abbatiat.items %}
+                <li><a href="{{url_for('acte', acte_id=acte.acte_id)}}">{{acte.acte_titre}}</a></li>
+            {% endfor %}
+        </ul>
+    <nav aria-label="research-pagination">
+      <ul class="pagination">
+        {%- for page in resultats_abbatiat.iter_pages() %}
+            {% if page %}
+
+              {% if page != resultats_abbatiat.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('recherche', acte_abbatiat=acte_abbatiat, page=page) }}">{{page}}</a>
+                </li>
+              {% else %}
+                <li class="page-item active disabled">
+                  <a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+                </li>
+              {% endif %}
+
+            {% else %}
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+            {% endif %}
+        {%- endfor %}
+        {% elif resultats_emetteur %}
+        <p/>
+        <p>Il y a {{resultats_emetteur.total}} acte(s) qui répond(ent) à votre requête :</p>
+        <ul>
+            {% for acte in resultats_emetteur.items %}
+                <li><a href="{{url_for('acte', acte_id=acte.acte_id)}}">{{acte.acte_titre}}</a></li>
+            {% endfor %}
+        </ul>
+    <nav aria-label="research-pagination">
+      <ul class="pagination">
+        {%- for page in resultats_emetteur.iter_pages() %}
+            {% if page %}
+
+              {% if page != resultats_emetteur.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('recherche', acte_emetteur=acte_emetteur, page=page) }}">{{page}}</a>
+                </li>
+              {% else %}
+                <li class="page-item active disabled">
+                  <a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+                </li>
+              {% endif %}
+
+            {% else %}
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+            {% endif %}
+        {%- endfor %}
+        {% elif resultats_type %}
+        <p/>
+        <p>Il y a {{resultats_type.total}} acte(s) qui répond(ent) à votre requête :</p>
+        <ul>
+            {% for acte in resultats_type.items %}
+                <li><a href="{{url_for('acte', acte_id=acte.acte_id)}}">{{acte.acte_titre}}</a></li>
+            {% endfor %}
+        </ul>
+    <nav aria-label="research-pagination">
+      <ul class="pagination">
+        {%- for page in resultats_type.iter_pages() %}
+            {% if page %}
+
+              {% if page != resultats_type.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('recherche', acte_type=acte_type, page=page) }}">{{page}}</a>
+                </li>
+              {% else %}
+                <li class="page-item active disabled">
+                  <a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+                </li>
+              {% endif %}
+
+            {% else %}
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+            {% endif %}
+        {%- endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+{% endblock %}

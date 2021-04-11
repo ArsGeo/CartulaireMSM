@@ -1,0 +1,44 @@
+{% extends "conteneur.html" %}
+
+{% block afternav %}
+    {% include "partials/cart.html" %}
+{%endblock%}
+
+{% block corps %}
+
+<style type="text/css">
+
+	h1 {
+		margin-left: 150px;
+        margin-right: 150px;
+        text-align: center;
+	}
+
+	.presentation {
+		font-size: 30px;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .img {
+    	align-content: center;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        content: url({{url_for("static", filename="images/abb.jpeg")}});
+    }
+
+</style>
+
+<h1 class="titre_accueil">Corpus des actes du cartulaire de l'abbaye du Mont Saint-Michel</h1>
+    {% if actes %}
+    <p class="presentation">Il y a actuellement {{actes|length}} actes consultables</p>
+    {% else %}
+        <p class="presentation">La base de données est en cours de constitution</p>
+    {% endif %}
+
+<div class="img">
+	</div>
+
+{% endblock %}

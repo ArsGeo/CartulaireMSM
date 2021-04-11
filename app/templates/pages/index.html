@@ -1,0 +1,48 @@
+{% extends "conteneur.html" %}
+
+{% block afternav %}
+    {% include "partials/cart.html" %}
+{%endblock%}
+
+{% block titre %}
+    Index
+{% endblock %}
+
+{% block corps %}
+    <p/>
+    <h1 class="titre_page">Index des actes</h1>
+    <p/>
+
+        <ul>
+            {% for acte in actes.items %}
+                <li><a href="{{url_for('acte', acte_id=acte.acte_id)}}">{{acte.acte_titre}}</a></li>
+            {% endfor %}
+        </ul>
+
+<nav aria-label="research-pagination">
+      <ul class="pagination">
+        {%- for page in actes.iter_pages() %}
+            {% if page %}
+
+              {% if page != actes.page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('index', keyword=keyword, page=page) }}">{{page}}</a>
+                </li>
+              {% else %}
+                <li class="page-item active disabled">
+                  <a class="page-link">{{page}} <span class="sr-only">(actuelle)</span></a>
+                </li>
+              {% endif %}
+
+            {% else %}
+                <li class="page-item disabled">
+                  <a class="page-link">...</a>
+                </li>
+            {% endif %}
+
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <p><a href="{{url_for('accueil')}}">Retour à l'accueil</a></p>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "conteneur.html" %}
+
+{% block afternav %}
+    {% include "partials/cart.html" %}
+{%endblock%}
+
+{% block titre %}
+    Index des lieux
+{% endblock %}
+
+{% block corps %}
+    <p/>
+    <h1 class="titre_page">Index des lieux</h1>
+    <p/>
+
+
+    <div>
+    {{contenu_index_lieux|safe}}
+    </div>       
+
+    <p><a href="{{url_for('accueil')}}">Retour à l'accueil</a></p>
+{% endblock %}

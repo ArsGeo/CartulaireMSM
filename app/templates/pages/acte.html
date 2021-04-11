@@ -1,0 +1,68 @@
+{% extends "conteneur.html" %}
+
+{% block titre %}
+    {%if acte %}| Acte : {{acte.acte_titre}} {% endif %}
+{% endblock %}
+
+{% block corps %}
+    {% if acte %}
+    <style type="text/css">
+            h1  {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-style: italic;
+            }
+            dl {
+                text-align: left;
+                margin-bottom: 50px;
+            }
+
+            table, td{
+    			border: 3px solid #333;
+    			margin-left: auto;
+  				margin-right: auto;
+  				width: 500px;
+  				height: 50px;
+			}
+
+			th, td {
+				text-align: center;
+                font-size: 18px;
+			}
+    </style>
+
+
+
+
+        <h1>{{acte.acte_titre}}</h1>
+        <table>
+    <thead>
+        <tr>
+            <th colspan="2">Données générales</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Date</td>
+            <td>{{acte.acte_date}}</td>
+        </tr>
+        <tr><td>Émetteur</td>
+            <td>{{acte.acte_emetteur}}</td>
+        </tr>
+        <tr><td>Type</td>
+            <td>{{acte.acte_type}}</td>
+        </tr>
+        <tr><td>Abbatiat</td>
+            <td>{{acte.acte_abbatiat}}</td>
+        </tr>
+    </tbody>
+</table>
+    {% else %}
+        <p>La base de données est en cours de constitution</p>
+    {% endif %}
+    <div>
+    {{contenu_acte|safe}}
+    </div>
+    <p><a href="{{url_for('index')}}">Retour à l'index</a></p>
+{% endblock %}

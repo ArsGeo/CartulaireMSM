@@ -1,0 +1,9 @@
+{% extends "conteneur.html" %}
+{% block afternav %}
+    {% include "partials/cart.html" %}
+{%endblock%}
+{% block corps %}
+<div>
+	{{contenu_projet|safe}}
+</div>
+{% endblock %}
