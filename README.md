@@ -21,7 +21,7 @@ Dans le terminal (Linux ou macOS)
   
     * Activer l'environnement : ```source [nom de l'environnement]/bin/activate```;
     
-    * Flask et lxml : ```pip3 install flask``` et ```pip3 install lxml``` ;
+    * Flask et lxml : ```pip3 install flask==1.1.2``` et ```pip3 install lxml==4.5.1``` ;
     
     * SQLAlchemy : ```pip install flask_sqlalchemy==2.5.1``` ;
     
