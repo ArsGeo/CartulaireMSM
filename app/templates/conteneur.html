@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cartulaire {%block titre %}{%endblock%}</title>
+        {% include "partials/css.html" %}
+        {% include "partials/metadata.html" %}
+        <style type="text/css">
+
+            .hero  {
+                background-position: center center;
+                padding: 7vh;
+                background-image: url({{url_for("static", filename="images/charte.jpeg")}});
+            }
+
+            body {
+                background-size: cover;
+                background-image: url({{url_for("static", filename="images/background.jpeg")}});
+            }
+
+        </style>
+    </head>
+    <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" href="{{ url_for('accueil') }}">Cartulaire du Mont Saint-Michel</a>
+        <a class="navbar-brand" href="{{ url_for('projet') }}">Projet</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">Index des actes</a>
+        <a class="navbar-brand" href="{{ url_for('index_lieux') }}">Index des lieux</a>
+        <a class="navbar-brand" href="{{ url_for('index_noms') }}">Index des noms</a>
+        <a class="navbar-brand" href="{{ url_for('rechercher') }}">Recherche</a>
+        <form class="form-inline" action="{{url_for('recherche')}}" method="GET">
+          <input class="form-control" name="keyword" type="search" placeholder="Recherche rapide" aria-label="Recherche">
+          <button class="btn btn-outline-info" type="submit">Rechercher</button>
+        </form>
+      </nav>
+      {% block afternav %}{%endblock%}
+      <div class="container">
+        <div class="row">
+            <div class="col">
+            {% block corps %}{% endblock %}
+            </div>
+        </div>
+      </div>
+    </body>
+</html>
