@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="app/static/xml/out/oddmsm.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Echantillon des actes du cartulaire de l'abbaye du Mont Saint-Michel</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <date>Produit en 2020</date>
+          <persName xml:id="GC">Arsène Georges</persName>
+          <add>Edité par Arsène Georges et selon des normes inspirées des normes d'édition e-Cartae
+            mises au point par le Pôle Documents Numérique de la MRSH de Caen. Ces normes ont été
+            modifiées pour les besoins de ce projet.</add>
+          <add>Le cartulaire de l'abbaye du Mont Saint-Michel fut constitué au milieu du XIIe siècle
+            par les moines du Mont et remplissait plusieurs objectifs : écrire une histoire de
+            l'abbaye a travers ses acquisitions patrimoniales qui firent sa puissance, constituer
+            une liste de possessions qui pourraient, à défaut de justifier des droit en s'y référant
+            de manière pratique, aider à les retrouver de manière claire ; et enfin à justifier la
+            primauté de l'abbé dans son pouvoir sur l'abbaye en opposition aux ducs de Normandie
+            souhaitant étendre leur influence sur les grandes abbayes, et ce en rappelant le rôle
+            crucial des abbés dans la constitution du patrimoine de l'abbaye et ainsi leur autorité.
+            Le manuscrit (ms 210) est conservé à la bibliothèque patrimoniale d'Avranches.</add>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher/>
+        <pubPlace>Caen</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Avranches</settlement>
+            <repository>Bibliothèque municipale</repository>
+            <idno>MS. 210</idno>
+          </msIdentifier>
+          <p>Latin, cartulaire de l'abbaye rédigé au XIIe siècle ; de nombreux ajouts sont présents et concernent des donations ultérieures, jusqu'au XIVe siècle.</p>
+          <p>365 x 245 mm, 137 folia.</p>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <settingDesc>
+        <place xml:id="saint_mickaels_mount">
+          <placeName><name>Prieuré de Saint Michael’s Mount en Cornouailles</name></placeName>
+        </place>
+        <place xml:id="winnianton">
+          <placeName><name>Centaine de Winnianton en Cornouailles</name></placeName>
+        </place>
+        <place xml:id="romney">
+          <placeName><name>Port de Romney dans le Kent</name></placeName>
+        </place>
+        <place xml:id="grossim_place">
+          <placeName><name>Grossim</name></placeName>
+        </place>
+        <place xml:id="pirosholdri">
+          <placeName><name>Pirosholdri</name></placeName>
+        </place>
+        <place xml:id="gohory">
+          <placeName><name>Prieuré de Gohory</name></placeName>
+        </place>
+        <place xml:id="eglise_centrannis">
+          <placeName><name>Eglise de Centrannis</name></placeName>
+        </place>
+        <place xml:id="yssoir">
+          <placeName><name>Vieux-pont (aujourd'hui le pont Yssoir)</name></placeName>
+        </place>
+        <place xml:id="plesguens">
+          <placeName><name>Eglises de Saint-Broladre et de Saint-Pierre-en-Plesguens</name></placeName>
+        </place>
+        <place xml:id="gevereau">
+          <placeName><name>Grand Gevereau</name></placeName>
+        </place>
+        <place xml:id="villemenu">
+          <placeName><name>Villemenu</name></placeName>
+        </place>
+        <place xml:id="vereis_place">
+          <placeName><name>Vereis</name></placeName>
+        </place>
+        <place xml:id="trencata">
+          <placeName><name>L’île de Trencata</name></placeName>
+        </place>
+        <place xml:id="andelle">
+          <placeName><name>Perrier-sur-Andelle</name></placeName>
+        </place>
+        <place xml:id="budleigh">
+          <placeName><name>Budleigh dans le Devon</name></placeName>
+        </place>
+        <place xml:id="berkshire">
+          <placeName><name>Eglises de Wargrave et Cholsey dans le Berkshire</name></placeName>
+        </place>
+        <place xml:id="reading">
+          <placeName><name>Abbaye de Reading</name></placeName>
+        </place>
+        <place xml:id="levare">
+          <placeName><name>Eglise de Levaré</name></placeName>
+        </place>
+        <place xml:id="longis">
+          <placeName><name>Longis Sulcis</name></placeName>
+        </place>
+        <place xml:id="curtis">
+          <placeName><name>Curtis Sulcis</name></placeName>
+        </place>
+        <place xml:id="torpol">
+          <placeName><name>Torpol</name></placeName>
+        </place>
+        <place xml:id="broladre">
+          <placeName><name>Saint-Broladre</name></placeName>
+        </place>
+        <place xml:id="croix">
+          <placeName><name>Le village de La Croix-Avranchin</name></placeName>
+        </place>
+        <place xml:id="guernesey">
+          <placeName><name>Guernesey</name></placeName>
+        </place>
+      </settingDesc>
+      <particDesc>
+        <listPerson type="particuliers">
+          <person>
+            <persName xml:id="ElC"> Edouard le Confesseur </persName>
+          </person>
+          <person>
+            <persName xml:id="prima"> Prima, épouse d'Alain </persName>
+          </person>
+          <person>
+            <persName xml:id="eudesM"> Eudes de Montigny-le-Ganelon </persName>
+          </person>
+          <person>
+            <persName xml:id="thibaut"> Thibaut de Dangeau </persName>
+          </person>
+          <person>
+            <persName xml:id="huguessille"> Hugues de Sillé </persName>
+          </person>
+          <person>
+            <persName xml:id="raoulmans"> Raoul III, vicomte du Mans </persName>
+          </person>
+          <person>
+            <persName xml:id="rivallon"> Rivallon, fils de Gautier </persName>
+          </person>
+          <person>
+            <persName xml:id="huguesalias"> Hugues, alias Hiluin de Montenay </persName>
+          </person>
+          <person>
+            <persName xml:id="conan"> Conan III de Bretagne </persName>
+          </person>
+          <person>
+            <persName xml:id="henribeauclerc"> Henri Ier Beauclerc </persName>
+          </person>
+          <person>
+            <persName xml:id="geoffroy"> Geoffroy fils de Rivallon </persName>
+          </person>
+          <person>
+            <persName xml:id="elias"> Elias Boterat </persName>
+          </person>
+          <person>
+            <persName xml:id="pierre"> Pierre de Saint-Hilaire(-du-Harcouët) </persName>
+          </person>
+          <person>
+            <persName xml:id="renaud"> Renaud, fils d'Hugues </persName>
+          </person>
+          <person>
+            <persName xml:id="eudesgod"> Eudes Godeschal </persName>
+          </person>
+        </listPerson>
+        <listPerson type="abbes">
+          <person>
+            <persName xml:id="bernard">Bernard du Bec</persName>
+          </person>
+          <person>
+            <persName xml:id="roger">Roger II</persName>
+          </person>
+          <person>
+            <persName xml:id="mainard">Mainard II</persName>
+          </person>
+          <person>
+            <persName xml:id="hildebert">Hildebert Ier</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+  <facsimile n="1" source="F. 32v.">
+    <graphic url="../static/images/actes/acte_1.jpeg"/>
+  </facsimile>
+  <facsimile n="2" source="F. 96v - 97r.">
+    <graphic url="../static/images/actes/acte_2_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_2_b.jpeg"/>
+  </facsimile>
+  <facsimile n="3" source="F. 99r - 99v.">
+    <graphic url="../static/images/actes/acte_3_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_3_b.jpeg"/>
+  </facsimile>
+  <facsimile n="4" source="F. 99v.">
+    <graphic url="../static/images/actes/acte_3_b.jpeg"/>
+  </facsimile>
+  <facsimile n="5" source="F. 53v - 54r.">
+    <graphic url="../static/images/actes/acte_5_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_5_b.jpeg"/>
+  </facsimile>
+  <facsimile n="6" source="F. 52r - 52v.">
+    <graphic url="../static/images/actes/acte_6_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_6_b.jpeg"/>
+  </facsimile>
+  <facsimile n="7" source="F. 42v - 43r.">
+    <graphic url="../static/images/actes/acte_7_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_7_b.jpeg"/>
+  </facsimile>
+  <facsimile n="8" source="F. 68r - 68v.">
+    <graphic url="../static/images/actes/acte_8_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_8_b.jpeg"/>
+  </facsimile>
+  <facsimile n="9" source="F. 77v - 78r.">
+    <graphic url="../static/images/actes/acte_9_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_9_b.jpeg"/>
+  </facsimile>
+  <facsimile n="10" source="F. 104v.">
+    <graphic url="../static/images/actes/acte_10.jpeg"/>
+  </facsimile>
+  <facsimile n="11" source="F. 63v - 64r.">
+    <graphic url="../static/images/actes/acte_11_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_11_b.jpeg"/>
+  </facsimile>
+  <facsimile n="12" source="F. 106v.">
+    <graphic url="../static/images/actes/acte_12.jpeg"/>
+  </facsimile>
+  <facsimile n="13" source="F. 111r - 111v.">
+    <graphic url="../static/images/actes/acte_13_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_13_b.jpeg"/>
+  </facsimile>
+  <facsimile n="14" source="F. 87v - 88r.">
+    <graphic url="../static/images/actes/acte_14_a.jpeg"/>
+    <graphic url="../static/images/actes/acte_14_b.jpeg"/>
+  </facsimile>
+  <facsimile n="15" source="F. 103v.">
+    <graphic url="../static/images/actes/acte_15.jpeg"/>
+  </facsimile>
+  <text>
+    <front/>
+    <group>
+      <text xml:id="vennesire" n="1">
+        <front>
+          <titlePart type="Charte">Donatio libre de Vennesire</titlePart>
+          <docDate>
+            <date from="1027-09-06" to="1035-07-02">[1027, 6 août - 1035, 2 juillet]</date>
+          </docDate>
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#ElC" type="emetteur">Edouard le Confesseur</persName>, pour le salut
+              de son âme et de celles de ses parents, accorde au Mont le <placeName
+                ref="#saint_mickaels_mount">Prieuré de Saint Michael’s Mount en
+                Cornouailles</placeName> avec le château, les fermes (<hi rend="normal"
+              >villis</hi>), les champs, et ses dépendances ; toutes les terres de <placeName
+                ref="#winnianton">La centaine de Winnianton en Cornouailles</placeName> avec les
+              places fortes, les forêts, les prés, les terres cultivées et en friche, et toutes les
+              redevances ; ainsi que le <placeName ref="#romney">Port de Romney dans le
+                Kent</placeName>, avec les moulins, les pêcheries, les terres en culture et en
+              friche et leurs revenus.</p>
+          </div>
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 32v. Regeste du XVII<hi rend="sup">e</hi> siècle : "<hi
+                      rend="italic">Donatio libra de Vennesire</hi>".</witness>
+
+                  <witness n="utile">B. Copie à partir du cartulaire dans <orgName type="repository"
+                      >BnF</orgName>, <idno>ms lat. 10072</idno>, n°6.</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 88.</witness>
+
+                  <witness n="utile">b. Marie Fauroux (éd.), <hi rend="italic">Recueil des actes des
+                      ducs de Normandie</hi>... n°76, depuis le cartulaire.</witness>
+
+                  <witness n="utile">c. S. Keynes, "The Æthelings in Normandy", dans <hi
+                      rend="italic">Anglo-Norman Studies,</hi> n°XIII, 1991, p. 190-194, démontrant
+                    l'authenticité de la charte et suggérant des identifications des lieux
+                    mentionnés.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+          <div type="Dissertation_critique">
+            <p>Pendant le règne de son demi-frère Harthacnut, Edouard était en exil à la cour de
+              Robert I<hi rend="sup">er</hi> de Normandie (dont le principat dure du 6 août 1027 au
+              2 juillet 1035), où il fut reconnu comme roi légitime d'Angleterre. Il y règnera de
+              1042 à 1066. M. Fauroux date l’acte vers 1034-1035.</p>
+          </div>
+        </front>
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+          <p><seg function="invocatio">IN NOMINE SANCTE ET INDIVIDUE TRINITATIS.</seg>
+            <seg function="intitulatio">Ego EDWARDUS Dei gratia rex Anglorum,</seg>
+            <seg function="dispositio">dare volens pretium redemptionis animę meę, vel parentum
+              meorum, sub consensu et testimonio bonorum virorum, tradidi sancto MICHAELI archangelo
+              in usum fratrum Deo servientium in eodem loco Sancti MICHAELEM qui est juxta mare, cum
+              omibus appendiciis, villis scilicet, castellis, agris, et ceteris attinentibus. Addidi
+              etiam totam terra de <foreign xml:lang="fro">Vennesire</foreign>, cum oppidis, villis,
+              agris, pratis, terris cultis et incultis, et cum horum reditibus. Adjunxi quoque datis
+              addere portum qui vocatur Ruminella, cum omnibus quę ad eum pertinent, hoc est
+              molendinis et piscatoris, et cum omni territorio illius culto et inculto, et eorum
+              reditibus.</seg>
+            <seg function="corroboratio">Si quis autem his donis conatus fuerit ponere calumpniam,
+              anathema factus, iram Dei incurrat perpetuam. Utque nostre donationis auctoritas
+              verius firmiusque teneatur in posterum, manu mea firmando subterscripsi, <mod
+                type="substitution">q</mod>uod<note subtype="complement" type="apparat"><p>auod <hi
+                    rend="italic">a. c.</hi></p></note> et plures fecere testium</seg>. <seg
+              function="subscriptions">S. regis Edwardi <g ref="#crux">(croix),</g> S. Roberti
+              comitis <g ref="#crux">(croix)</g>, S. <foreign xml:lang="fro">Rabel</foreign>
+              <g ref="#crux">(croix),</g> S. Rotberti archiepiscopi Rotomagensis <g ref="#crux"
+                >(croix),</g> S. Hereberti Luxoviensis episcopi <g ref="#crux">(croix),</g> S.
+              Rotberti episcopi Constanciensis <g ref="#crux">(croix),</g> S. Umfredi <g ref="#crux"
+                >(croix),</g> S. Nigelli vicecomitis <g ref="#crux">(croix),</g> S. Anschitilli <g
+                ref="#crux">(croix)</g>, S. Radulfi <g ref="#crux">(croix),</g> S. <foreign
+                xml:lang="fro">Choschet</foreign>
+              <g ref="#crux">(croix)</g>, S. Turstini <g ref="#crux">(croix).</g></seg></p>
+        </body>
+      </text>
+      <text xml:id="grossim" n="2">
+        <front>
+          <titlePart type="Charte">De piscatoria que vocatur Grossim</titlePart>
+          <docDate>
+            <date from="1142" to="1149-05-08">[1142 - 1149, 8 mai]</date>
+          </docDate>
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#prima" type="emetteur">Prima, épouse d'Alain</persName>, donne à
+              l'abbaye, avec l'accord de son époux, pour le salut de leurs âmes, sur l'autel du
+              Mont, une pêcherie appelée <placeName ref="#grossim_place">Grossim</placeName>. Hugues
+              de <hi rend="italic">Barra </hi>avait réclamé un cinquième des revenus de la pêcherie,
+              qu'il paria sur un duel (<hi rend="normal">inde duellum vadiaverat</hi>), mais il
+              abandonna la revendication (<hi rend="normal">calumpniam pretermisit</hi>) et concéda
+              la donation. Fait sous l'abbé <persName ref="#bernard" type="abbe">Bernard du Bec</persName>.</p>
+          </div>
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 96v. Rubrique : "<hi rend="italic">De piscatoria que vocatur
+                      Grossim</hi>".</witness>
+                </listWit>
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 167.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+          <div type="Dissertation_critique">
+            <p>L'abbé Bernard du Bec (5 février 1131 au 8 mai 1149) est présent lors de la donation,
+              de même que le prieur Hugues (à partir de 1142). La pêcherie est citée comme faisant
+              partie du prieuré de Saint-Méloir-des-Ondes, elle était donc très certainement près de
+              cette commune.</p>
+
+            <p>Le Rualen fils de Roger est sûrement le <hi rend="italic">Rualen filius Rogeri
+                sacerdotis</hi> du n°82 ; et le <hi rend="italic">Ruallen</hi> Caucebof est sûrement
+              le Rivallon Calcebos des n°57, 58 et 80.</p>
+          </div>
+        </front>
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+          <p><seg function="invocatio"><hi rend="litteraeElongatae">In nomine</hi> PATRIS, ET FILII,
+              ET SPIRITUS SANCTI. AMEN.</seg>
+            <seg function="notificatio">Notum sit omnibus tam presentibus quam futuris</seg>, <seg
+              function="intitulatio">quod ego Prima</seg>, <seg function="dispositio">Dei amore et
+              sancti Michaelis accensa, dedi et concessi <sic>quandam</sic> piscariam quę vocatur
+                <foreign xml:lang="fro">Grossim</foreign> Deo et sancto Michaeli, concessu domini
+              Alani sponsi mei, pro anime mee ipsiusque salute cunctorumque antecessorum meorum. Hoc
+              et enim donum in presentia <sic>donni</sic> abbatis Bernardi et ejusdem loci
+              monachorum, et quam plurimorum aliorum clericorum et laicorum, super altare sancti
+              Michaelis posui et ut predixi finitenus concessi. Hugo autem de <foreign
+                xml:lang="fro">Barra</foreign> qui quintam ejusdam piscarie partem calumpniabatur,
+              et inde duellum vadiaverat, calumpniam pretermisit, et donum fir<pb n="97r"/>miter
+              tenendum et inconvulse bono animo et absque contradictione, concessit. </seg><seg
+              function="witnessList">Ad hanc concessionem interfuit predictus abbas Bernardus et
+              Hugo prior, omnisque conventus. Interfuerunt eciam alii : Petrus capellanus, <foreign
+                xml:lang="fro">Ruallen</foreign> Rogeri filius, Guillelmus Pulchra Barba, <foreign
+                xml:lang="fro">Ruallen</foreign>
+              <foreign xml:lang="fro">Caucebof</foreign> et Guillelmus filius suus, Johannes
+                <foreign xml:lang="fro">Chesnel</foreign> et Philippus filius suus, Richardus
+                <foreign xml:lang="fro">Becdefer</foreign>, Radulfus <foreign xml:lang="fro"
+                >Becdefer</foreign>, Guimundus <foreign xml:lang="fro">Crasboel</foreign>,
+              Escollandus filius suus, et multi alii.</seg></p>
+        </body>
+      </text>
+      <text xml:id="gohere" n="3">
+        <front>
+          <titlePart type="Notice">De Gohere</titlePart>
+
+          <docDate>
+            <date when="1139">1139</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#eudesM" type="emetteur">Eudes de Montigny-le-Ganelon</persName>, pour
+              le salut de son âme et celle de sa femme Agnès, a donné une terre qui se trouve à côté
+              de <placeName ref="#pirosholdri">Pirosholdri</placeName> (?) au <placeName
+                ref="#gohory">Prieuré de Gohory</placeName>, du temps du prieur Brien. Hubert <hi
+                rend="normal">paganus</hi>, avec sa femme Eustachie et leurs fils Eudes et Renaud,
+              ont concédé aussi leur moitié de cette terre. fait sous l'abbatiat de <persName
+                ref="#bernard" type="abbe">Bernard du Bec</persName>.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 99r. Rubrique : "<hi rend="italic">De eodem</hi>".</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 170.</witness>
+
+                  <witness n="utile">b. B. de Broussillon, <hi rend="italic">Cartulaire de
+                      l'Abbayette...</hi> n°12, depuis <orgName type="repository">BnF,</orgName>
+                    <idno>ms lat. 5430A</idno>, p. 154, où il est noté : "<hi rend="italic">Ce
+                      papier ne paroit etre que copié et même defectueuse. Semble etre de
+                      Goheri</hi>".</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>L'acte est daté de 1039 mais il faut corriger 1139. Eudes de Vallières (mort vers
+              1140) était le second époux d'Agnès, fille et cohéritière de Ganelon II de
+              Montigny-le-Ganelon, de qui la soeur Adélaïde fut mariée à Hamelin, frère de Nivelon
+              de Fréteval et de la vicomtesse Agnès, femme d'Hugues, vicomte de Châteaudun (n°99 et
+              102). Ce dernier et Agnès ont eu plusieurs fils et filles, dont Eustachie, la femme
+              d'Hubert Payen le fils d'Eudes Potard, du n°93.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p><seg function="dispositio">DOMINUS ODO de Montinneio donat ecclesie sancti Michaeli et
+              monachis ejusdem monasterii, terram quę est <sic>justa</sic> Pirosholdri, pro anima
+              sua et pro anima Agnetis uxoris sue, et per animabus antecessorum suorum et
+              successorum, concedentibus uxore sua et filiis.</seg>
+            <seg function="dating">Ab incarnatione Domini annus M<hi rend="sup">us</hi> XXX<hi
+                rend="sup">us</hi> VIIII<hi rend="sup">us</hi></seg>, <seg function="dispositio"
+              >Hubertus paganus concedit supradicte medietatem ejusdem terre, quę sua erat in
+              elemosina pro anima sua et pro anima uxoris sue, et antecessorum et successorum.<pb
+                n="99v"/> Concedentibus uxore sua Eustachia et filiis suis Rainaldo et Odone.
+              </seg><seg function="witnessList">Ad hęc dona affuerunt hi : Bernardus sacerdos, Odo,
+              Burnellus, Gacio de Castello Romano, Odo de Loisvilla, Haimericus de Merlaio,
+              Gaufridus <foreign xml:lang="fro">Tenpledoia</foreign>, Rainaldus <foreign
+                xml:lang="fro">Cochin</foreign>, Simon de <foreign xml:lang="fro"
+                >Laboesche</foreign>, Bochardus <foreign xml:lang="fro">Boguet</foreign>, Ricanus,
+              Herveus de <foreign xml:lang="fro">Monsorel</foreign>, Freelinus, Osbernus
+              Mediatorius, Garnerius, Albertus.</seg><seg function="dating"> Hęc elemosina fuit data
+              in tempore quo Clemens sacerdos et Briennus prior erat apud Gohereium.</seg></p>
+        </body>
+      </text>
+      <text xml:id="gohere2" n="4">
+        <front>
+          <titlePart type="Charte">Item de eodem (de Gohere 3)</titlePart>
+
+          <docDate>
+            <date from="1081" to="1150">[1081 - 1150]</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#thibaut" type="emetteur">Thibaut de Dangeau</persName>, avec l'accord
+              de sa femme Hildebourg et de son fils Bernard, donne au <placeName ref="#gohory"
+                >Prieuré de Gohory</placeName> les revenus des péages qu'il a sur toute la partie de
+              sa terre se trouvant dans le domaine du prieuré.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 99v. Rubrique : "<hi rend="italic">Item de
+                    eodem</hi>".</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 171.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>K. Keats-Rohan propose une fourchette de datation de 1131 - 1149 ; on sait juste que
+              vers 1150, Thibault de Dangeau a confirmé une donation de Guillaume de Monthou à
+              Nogent-le-Rotrou, attesté aussi par Eudes Brisart et Payen <hi rend="italic">de Bosco,
+                  <hi rend="normal">i.e.</hi> de Nemore</hi>. Sachant cela et étant donné la
+              position de l'acte dans le cartulaire, après deux actes datés de l'abbatiat de
+              Bernard, il est très probable qu'il date aussi de celui-ci. Je garde cependant, en
+              l'absence d'autre preuve, le terminus <hi rend="italic">a quo</hi> de 1081, l'année de
+              l'émission de l'acte de fondation du prieuré de Gohory.</p>
+
+            <p>Eudes Brisart était le frère de Guihel et Rotrouc fils de Renaud Brisard, qui
+              apparaît dans une charte datée d'autour de 1080 - 1100, et où sont présents les fils
+              de Gérard Brunel (n°33).</p>
+
+            <p>Payen de <hi rend="italic">Nemore </hi>ou de <hi rend="italic">Bosco</hi> a donné des
+              terres à Saint-Maxime à l'abbaye de la Sainte-Trinité de Tiron ; sa femme Mathilde fut
+              ensuite la femme d'Hugues d'Alluyes.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p><seg function="notificatio">NO<hi rend="litteraeElongatae">T</hi>um sit cunctis
+              presentibus atque futuris</seg>, <seg function="intitulatio">quod ego Tebaldus de
+                <foreign xml:lang="fro">Daniol</foreign></seg>, <seg function="dispositio">concessu
+              uxoris mee Hildeburgis et filii mei Bernardi, concedo Deo et sancto Michaeli ejusque
+              monachis pedagium per totam terram meam de dominio ipsorum, ut libere et quiete
+              teneant absque calumpnia. </seg><seg function="corroboratio">Si quis autem huic mee
+              donationi voluerit contraire, eidem archangelo cogatur rationem de hoc reddere, in
+              extremo examine.</seg>
+            <seg function="witnessList">Hujus rei testes sunt : Odo de <foreign xml:lang="fro"
+                >Daniol</foreign>, Albaldus presbiter, Gaufredus de Cantemerla, Hugo <foreign
+                xml:lang="fro">Guinneleu</foreign>, Odo <foreign xml:lang="fro">Brisart</foreign>,
+              Paganus de Nemore, Radulfus Longis, Walterius de Loisvilla, Guillelmus de <foreign
+                xml:lang="fro">Moncels</foreign>. </seg></p>
+        </body>
+      </text>
+      <text xml:id="centrannis" n="5">
+        <front>
+          <titlePart type="Charte">Carta de ecclesia Centrannis</titlePart>
+
+          <docDate>
+            <date from="1009" to="1017-01-07">[1009 - 1017, 7 janvier]</date>
+          </docDate>
+
+          <div subtype="vente_achat" type="Analyse">
+            <p><persName ref="#huguessille" type="emetteur">Hugues de Sillé</persName>, sur la
+              requête de l’abbé Hildebert I<hi rend="sup">er</hi>, vend deux parts des revenus de
+                l’<placeName ref="#eglise_centrannis">Eglise de Centrannis</placeName> (?). Il avait
+              au début refusé, mais avec l’assentiment d’Hugues [III] comte du Maine, sur le conseil
+              de ses propres vassaux, de sa femme Régine, de ses fils Hugues et Guillaume, et de ses
+              frères Josselin et Héribran, il a finalement accepté, en échange d’une rente annuelle
+              de huit deniers, payable lors de la fête de saint Denis. Cf. n°46. Fait sous
+              l'abbatiat de <persName ref="#roger" type="abbe">Roger II</persName>.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 53v. Rubrique : "<hi rend="normal"><hi rend="italic">Carta de
+                        ecclesia Centrannis</hi>".</hi></witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 112.</witness>
+
+                  <witness n="utile">b. B. de Broussillon (éd.), <hi rend="italic">Cartulaire de
+                      Saint-Michel-de-l’Abbayette... </hi>n°3, depuis le cartulaire.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>La localisation de <hi rend="italic">Centrannis</hi> n'est pas encore établie de
+              manière satisfaisante. Les émetteurs de cette charte et du n°46 peuvent être
+              identifiés comme les ancêtres des seigneurs de Sillé-le-Guillaume, bienfaiteurs de
+              l'abbaye (n°64). Hugues et ses frères ont consenti à la vente des droits de l'église
+              de <hi rend="italic">Centrannis</hi> autrefois tenus par les parents de leur mère
+              Raimbourg à l'abbaye du Mont Saint-Michel, peut-être à la même occasion que
+              lorsqu'Yves fils de Foulques restaura <hi rend="italic">Villarenton</hi> (n°25 et
+              46).</p>
+
+            <p>Le frère d'Hugues, Héribran, aida Herbert I<hi rend="sup">er</hi> du Maine contre
+              l'évêque Avesgaud, et sous le nom d'Héribran de Pirmil ; il s'est vu attribué le fief
+              de Saint-Saturnin précédemment tenu par Josselin Mansel, de Foulques Nerra d'Anjou, et
+              donna des terres à Ronceray à l'abbaye. Il s'allia à l'évêque Gervais et à Hugues IV
+              du Maine contre Geoffroy Martel vers 1045.</p>
+
+            <p>Hugues, fils d'Hugues, était Hugues de Sillé, connu comme étant un homme important
+              dans la région. Vers 1069 il fut un opposant de l'évêque du Mans pro-Normand, Arnold,
+              qu'il captura pendant que l'évêque attaquait son château, et s'opposa aussi à Geoffroy
+                I<hi rend="sup">er</hi> de Mayenne durant la période suivante. Son fils et
+              successeur, Guillaume, qui apparaît dans les années 1080, a sûrement donné son nom à
+              Sillé-le-Guillaume (n°64).</p>
+
+            <p>La vente est faite au temps de l'abbatiat d'Hildebert I<hi rend="sup">er</hi>, entre
+              1009 et le 7 janvier 1017. On remarque qu'il n'y ni liste de témoins ni souscription,
+              alors qu'il est bien dit que Hugues a signé l'acte de sa main.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p><seg function="invocatio"><hi rend="litteraeElongatae">IN NOMINE PATRIS, ET FILII, ET
+                SPIRITUS SANCTI</hi></seg>. <seg function="intitulatio">Ego Hugo</seg>, <seg
+              function="notificatio">nosse volo tam presentes quam abstentes, tam viventes quam
+              victuros,</seg>
+            <seg function="dispositio">quod monachi sancti Michaelis <sic>abba</sic> scilicet
+              Heldebertus, et ceteri sibi commissi ad me venientes, pecierunt ut duas partes
+              ęcclesiae quę Centrannis vocatur eis venderem. Quod primum aliquandiu renuens, tandem
+              eorum postulationi adquiescens, per mei domini Hugonis assensum et per meorum fidelium
+              consilium, uxoris quippe meae Regine nomine et filiorum Hugonis atque Willelmi,
+              fratrumque meorum Gauslini et Heribranni, predictas ęcclesiae partes <pb n="54r"/>duas
+              eisdem monachis vendidi, eo tenore, ut eas teneat, habeat, possideat locus sancti
+              Michaelis perpetualiter sine ullius contradictione ; solvant autem annis singulis, ad
+              festivitatem sancti Dionisii, octo denarios in censu.</seg>
+            <seg function="corroboratio">Quod si aliquis meorum successorum ex inde aliquam eis
+              injuriam vel calumpniam inferre presumpserit, perpetua dampnetur maledictione. Ut
+              autem hujus venditionis auctoritas verius et perfectius futuris temporibus
+              conservetur, manu propria subter eam firmavi.</seg></p>
+        </body>
+      </text>
+      <text xml:id="vinearum_centrannis" n="6">
+        <front>
+          <titlePart type="Charte">Carta de clauso vinearum Cenomannis</titlePart>
+
+          <docDate>
+            <date from="0992" notAfter="1000">[992 - 1000...]</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#raoulmans" type="emetteur">Raoul III, vicomte du Mans</persName>,
+              avec sa femme Godehelt et son fils Raoul, alors en pèlerinage au Mont, donnent, pour
+              le salut des âmes des membres de leur famille et de leurs successeurs, un clos à
+              vignes (<hi rend="normal">clausum vinearum</hi>) situé près d’un lieux appelé
+                <placeName ref="#yssoir">Vieux-pont (aujourd'hui le pont Yssoir)</placeName> aux
+              alentours du Mans, autorisé par Hugues [III] du Maine. Probablement fait sous l'abbé
+                <persName ref="#mainard" type="abbe">Mainard II</persName>.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 52r. Rubrique : "<hi rend="italic">Carta de clauso vinearum
+                      Cenomannis". </hi></witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 111.</witness>
+
+                  <witness n="utile">b. B. de Broussillon (éd.), <hi rend="italic">Cartulaire de
+                      Saint-Victeur au Mans...</hi> n°1, depuis le cartulaire.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Raoul, vicomte du Mans, était le frère de Mainard, évêque du Mans entre 950 et 970 et
+              d'Hildebourg, mère de Sigefroi (Seifrid) de Bellême, évêque du Mans d'environ 970 à
+              1004 (n°25 et 46). Son fils Raoul lui succéda vers 1000. Il fut le père d'autres fils,
+              dont Eudes et Geoffroy, premiers châtelains de Sablé.</p>
+
+            <p>Raoul III meurt vers 1000 et le principat d'Hugues III du Maine commence en 992 et
+              dure jusque vers 1015.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p><seg function="invocatio">IN NOMINE DEI</seg>, <seg function="intitulatio">Rodulfus,
+              gratia Christi summi regis omnipotensis, Cenomannis vicecomes.</seg>
+            <seg function="preamble">Quicumque res omnium fidelium matris sancta Dei ęcclesiae
+              augere conatur, bona sibi est voluntas et optimi operis <pb n="52v"/>cultis.</seg>
+            <seg function="intitulatio">Quod ego Rodulfus, gratia Dei Cenomannensis vicecomes,</seg>
+            <seg function="dispositio">vigili animo pertractans et sollicita mente requiens, cepi
+              memor esse meae salutis, necnon et meae bone conjugis <foreign xml:lang="fro"
+                >Godehelt</foreign>, et cuncte meae progeniei. </seg><seg function="notificatio"
+              >Ergo noverit omnium fidelium multitudo</seg>, <seg function="dispositio">quam dum
+              super Montem Sancti Michaelis causa orationis cum conjuge predicat, et filio nomine
+              Rodulfo petierim, optuli et dedi sancto Michaeli et omnibus inibi Deo servientibus,
+              tam presentibus quam futuris, clausum vinearum pro salute animae meae, et meae
+              conjugis nomine <foreign xml:lang="fro">Godehelt</foreign>, et filii Rodulfi, et
+              cuncte progeniei tam vivorum quam defunctorum, necnon et futurorum. Est autem
+              predictus clausus vinearum juxta civitatem in suburbio, in loco qui dicitur Vetus
+                <foreign xml:lang="fro">Pons</foreign>. </seg><seg function="corroboratio">Sed et ut
+              donatio quam de hac re sancto Michaeli supra ejus altare feci firma in perpetuum
+              haberetur, cartam manu firmatam ex inde fieri jussi, et eam firmandam domino meo
+              comiti Hugoni optuli, et firmare bono animo feci, ut jure perpetuo firma permaneat,
+              nullusque mei successor eam calumpniari presumat, et quicumque presumpserit, cum Juda
+              Christi Domini proditore et Anna Caipha dampnationem accipiat. </seg><seg
+              function="subscriptions">S. Hugonis comitis <g ref="#crux">(croix),</g> S. Radulfi <g
+                ref="#crux">(croix)</g> vicecomitis, S. <foreign xml:lang="fro">Godehelt</foreign>
+              uxoris ejus.</seg></p>
+        </body>
+      </text>
+      <text xml:id="broeladri" n="7">
+        <front>
+          <titlePart type="Charte">Carta de ecclesiis sanctorum Petri et Broeladri</titlePart>
+
+          <docDate>
+            <date when="1109">1109</date>
+          </docDate>
+
+          <div subtype="confirmation" type="Analyse">
+            <p><persName ref="#rivallon" type="emetteur">Rivallon, fils de Gautier</persName>,
+              soucieux pour son âme après sa mort, confirme la donation faite par son père,
+                <persName>Gautier, fils de Lingulf</persName>, et sa mère, d’un tiers des revenus
+              des <placeName ref="#plesguens">Eglises de Saint-Broladre et de
+                Saint-Pierre-en-Plesguens</placeName>, avec l’assentiment du prêtre Hervé qui avait
+              aussi revendiqué cette portion par droit héréditaire. Il reçoit de l’abbaye trente
+              sous en retour, et lui et sa famille entrent dans la confraternité des moines. Fait
+              sous l'abbé <persName ref="#hildebert" type="abbe">Hildebert Ier</persName>.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 42v. Rubrique : "C<hi rend="italic">arta de ecclesiis sanctorum
+                      Petri et Broeladri</hi>".</witness>
+
+                  <witness n="utile">B. Copie de l'original dans <orgName type="repository"
+                      >BnF,</orgName>
+                    <idno>ms lat. 10072</idno>, f. 29, n°23.</witness>
+
+                  <witness n="utile">C. Copie de l'original par G. Beauchesne dans <orgName
+                      type="repository">Arch. dép. de la Manche</orgName>, <idno>6 J 70, M
+                    10</idno>.</witness>
+
+                  <witness n="utile">D. Copie dans <orgName type="repository">BnF,</orgName>
+                    <idno>ms fr. 22357</idno>, p. 764.</witness>
+
+                  <witness n="utile">E. Copie dans <orgName type="repository">BnF,</orgName>
+                    <idno>ms fr. 22325</idno>, p. 720, dans laquelle le passage de <hi rend="italic"
+                      >Istius res</hi> à <hi rend="italic">ostendit</hi> n'est pas présent. Elle est
+                    décrite comme "copie faite de ce temps-là pour servir d'original".</witness>
+
+                  <witness n="utile">F. Copie incomplète dans <orgName type="repository"
+                      >BnF,</orgName>
+                    <idno>ms fr. 22325</idno>, p. 682.</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 100.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Un Rivallon fils de Gautier apparaît dans une charte d'Hamon <hi rend="italic"
+                >botellarius</hi> pour Saint-Florent de Saumur dans <orgName type="repository"
+                >BnF,</orgName>
+              <idno>ms lat. nov. acq. 1930</idno>, f. 71v - 72r.</p>
+
+            <p>G. Beauchesne note un blanc sur l'original après <hi rend="italic">mater mea</hi>, et
+              quatre signatures sans nom dans <orgName type="repository">Arch. dép. de la
+                Manche</orgName>, <idno>6 J 70, M 10</idno>.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B #C"/>
+
+          <p><seg function="invocatio">IN NOMINE SANCTAE ET INDIVIDUAE TRINITATIS. AMEN.</seg>
+            <seg function="intitulatio">Ego Rivallonus Galteri filius</seg>, <seg
+              function="preamble">a non nullis catholicis viris frequenter audivi, omnes illos
+              perpetuis fore <sic>subiciendos</sic> tormentis, qui ex rebus proprius aliquid domino
+              Deo pro stola immortalitatis induenda negligunt elargiri, vel qui surripiunt ecclesiis
+              sive sanctis quibuslibet locis, quę concessa sunt a predecessoribus ob consequen<pb
+                n="43r"/>dam gloriam ęternę jocunditatis.</seg>
+            <seg function="dispositio">Volens itaque gehenne perpetue flaminas et labores omnimodis
+              evitare, celique gaudia sine defectu obtinendo considare, dono et concedo omni
+              deinceps calumpni deposita illud donum, quod pater meus Galterius filius Lingulfi et
+              mater mea, pro animę sue salvatione Deo sanctoque MICHAELI archangelo ejus monachis ad
+              Dei servicium, in monte qui Tumba ab incolis nuncupatur constitutis, devote
+              intentionis proposito in perpetuum contulerunt, terciam videlicet partem ecclesiarum
+              sancti Petri sanctique Broaladri, concedente Herveo presbitero, qui in prefatis
+              ecclesiis hereditario jure portionem clamare solitus fuerat. Sed <sic>hut</sic> hujus
+              doni concessionem libentius facerem et firmius, ego et mei heredes finitenus tenerent,
+              abbatis et monachi datis michi pro hac confirmatione XXX<hi rend="sup">ta</hi>
+              solidis, me et meam uxorem, meosque filios ac filias, omnesque meos parentes, fecerunt
+              eorum fraternitatis participes.</seg>
+            <seg function="dating">Facta est<note subtype="addition" type="apparat"><p>autem <hi
+                    rend="italic">add. C, D</hi>.</p></note> hujus donationis renovatio, anno
+              Dominice incarnationis M<hi rend="sup">o</hi> centissimo nono, secunda
+              indictione</seg> ; <seg function="corroboratio">istius res datores, concessores, et
+              testes cum eorum signis, pagina sequens ostendit<note subtype="suppression"
+                type="apparat"><p>istius res <hi rend="italic">[...]</hi> ostendit <hi rend="italic"
+                    >om. E, F.</hi>
+                </p></note>. Qui ergo vero hoc donum quodam ego Rivallonis renovavi infregerit, nisi
+              resipiscat, anathema sit.</seg></p>
+        </body>
+      </text>
+      <text xml:id="montenai" n="8">
+        <front>
+          <titlePart type="Charte">Carta de Montenai</titlePart>
+
+          <docDate>
+            <date notBefore="1128" to="1150">[...1128 - 1150]</date>
+          </docDate>
+
+          <div subtype="restitution" type="Analyse">
+            <p><persName ref="#huguesalias" type="emetteur">Hugues, alias Hiluin de
+                Montenay</persName>, rend, pour l’absolution de l’âme de son père et sa propre
+              réconciliation avec Dieu et saint Michel, les cadeaux que son père avait faits à
+              l'abbaye et qu'il avait gardés pour lui à la mort de ce dernier : un manse sur lequel
+              on devait construire une habitation pour les moines, avec deux jardins et un verger,
+              ainsi que les dîmes du <placeName ref="gevereau">Grand Gevereau</placeName>, de
+                <placeName ref="#villemenu">Villemenu</placeName> et de la <placeName>Houellerie
+                (comm. Ernée)</placeName>, et la totalité des productions et des dîmes sur les
+              farines venant de ses moulins.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 68r. Rubrique : "<hi rend="italic"><hi rend="italic">Carta de
+                        Montenai".</hi></hi></witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 130.</witness>
+
+                  <witness n="utile">b. B. de Broussillon (éd.), <hi rend="italic">Cartulaire de
+                      Saint-Michel-de-l’Abbayette</hi>... n°11, à partir du cartulaire.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Montenay était un fief de la seigneurie de Mayenne. Guillaume de Montenay apparaît en
+              1150 dans un acte où Geoffroy de Mayenne confirmait des terres à Châtillon-sur-Colmont
+              à l'abbaye de Savigny, autrefois faisant partie du fief de Guillaume.</p>
+
+            <p>K. Keats-Rohan avance la date de 1128 en évoquant le fait qu'Hugues apparaît dans
+              l'acte n°44, daté de 1128.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p>
+            <seg function="invocatio">IN NOMINE SANCTE ET INDIVIDUE TRINITATIS, PATRIS ET FILII, ET
+              SPIRITUS SANCTI.</seg>
+            <seg function="intitulatio">EGO Hugo sive Hiluinus de <foreign xml:lang="fro"
+                >Montenay</foreign>,</seg>
+            <seg function="narratio">reducens ad memoriam quia pater meus res ecclesie sancti
+              Michaelis auferendo in vita sua, quas antecessores sui eidem loco dederant male
+              egerit, ideoque anathematis subjacuerit vinculis ; et ego ipse qui easdem res
+              ecclesiasticas post obitum ejus injuste retinui.</seg>
+            <seg function="dispositio">Monachorum obsolutionem, pro anima patris mei et <pb n="68v"
+              />pro reconciliatione mei erga Deum et erga sanctum Michaelem de tanta offensione
+              quesivi, et proprium donum secundum hoc quod divina gratia mihi inspiravit predicte
+              abbatie feci, mansionem ad edificandam domum monachi, cum hortis duobus et viridario,
+              et decimam de <foreign xml:lang="fro">Gevrel</foreign>, et totam decimam de Villa
+              Mensius, et de Loyleria, et totam illam partem, quam cum monachis accipiebam, reddo
+              totam ubique <sic>liberam</sic> et decimam frumenti de meis molendinis.</seg>
+            <seg function="witnessList">Et huic dono hi testes affuerunt : Rotbertus de Sancto
+              Dionisio, Rotbertus <foreign xml:lang="fro">Rossel</foreign> et Gauterius frater ejus,
+                <sic>donnus</sic> Garmundus clericus, <foreign xml:lang="fro">Fortin</foreign> de
+              Larouresa, Aalelmus nepos ejus, Radulfus filius Hervei clerici,</seg>
+            <seg function="subscriptions">S. Heluini <g ref="#crux">(croix)</g>, S. Rotberti <g
+                ref="#crux">(croix)</g> de Sancto Dionosio, S. Rotberti <g ref="#crux">(croix)</g>
+              fratris Heluini, S. Garmundi <g ref="#crux">(croix) </g>presbiteri, S. Fortini <g
+                ref="#crux">(croix).</g></seg>
+          </p>
+        </body>
+      </text>
+      <text xml:id="vereis" n="9">
+        <front>
+          <titlePart type="Charte">Carta de piscatoria de Vereis</titlePart>
+
+          <docDate>
+            <date from="1112" to="1140-10-30">[1112 - 1140, 30 octobre]</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#conan" type="emetteur">Conan III de Bretagne</persName> donne au
+              Mont, pour le salut de son âme, celle de son père Alain [IV], et celle de sa femme
+              [Mathilde], une pêcherie appelée <placeName ref="#vereis_place">Vereis</placeName> (?)
+              et <placeName ref="#trencata">L’île de Trencata</placeName> (peut-être la Tranchée
+              quelque part dans la baie de Cancale, mais non retrouvée). Confirmé par sa femme et sa
+              sœur Havoise.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 77v. Rubrique : "<hi rend="italic"><hi rend="italic">Carta de
+                        piscatoria de Vereis".</hi></hi></witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 143.</witness>
+
+                  <witness n="utile">b. Guillotel, <hi rend="italic">Actes</hi>... n° 151, p.
+                    466-468, depuis la copie du cartulaire et une copie de l'original faite en 1456
+                    par Robert Pichot, dans <orgName type="repository">Arch. dép. de
+                      Loire-Atlantique</orgName>, <idno>E 86</idno>.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Conan III de Bretagne (1112 - 1148) était le fils d'Alain IV Fergant et petit-fils
+              d'Havoise, soeur de Conan II et fille d'Alain III (n°16 et 22). Il épousa Mathilde,
+              une fille naturelle d'Henri I<hi rend="sup">er</hi> Beauclerc, avec qui il eut une
+              fille, Berthe, femme d'abord d'Alain III de Richemond (grand-père du frère d'Alain
+              III, le comte Eudes), et ensuite d'Eudes, vicomte de Porhoët. Sa soeur Havoise était
+              divorcée de Baudouin VII de Flandres avant l'émission de cette charte.</p>
+
+            <p>Brice est évêque de Nantes de 1112 au 30 octobre 1140.</p>
+
+            <p>Geoffroy I<hi rend="sup">er</hi> de La Guerche était le fils de Silvestre, évêque de
+              Rennes et petit-fils de Théobald, évêque de Rennes. Il acquit un fief en Angleterre
+              par son mariage avec Alfeva, fille de Leofwine, mais rentra à La Guerche en 1093. Il
+              eut un fils du nom d'Hervé. La seigneurie de La Guerche était tenue par son frère
+              Guillaume.</p>
+
+            <p>Simon II, fils de Bernard de La Roche-Bernard, est le fondateur du prieuré de Monton.
+              Sa femme était la soeur de Josselin de Porhoët, le descendant de l'émetteur du
+              n°21.</p>
+
+            <p>Olivier, fils de Brien, seigneur de Varades dans le comté de Nantes, était le père,
+              par sa femme Agnès <hi rend="italic">Dangerosa</hi>, de six fils, dont son héritier
+              Brien, et Pierre, futur chanoine de Tours, et d'une fille, Margaret, femme de Geoffrey
+              d'Ancenis.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p><hi rend="litteraeElongatae"><seg function="invocatio">IN NOMINE<note
+                  subtype="decoration" type="apparat"><p>le <hi rend="italic">o</hi> est copié
+                    par-dessus le <hi rend="italic">n</hi> et le <hi rend="italic">i</hi> est
+                    au-dessus du <hi rend="italic">m</hi>.</p></note> PATRIS, ET FILII, ET SPIRITUS
+                SANCTI. AMEN</seg></hi>. <seg function="intitulatio">EGO Conanus, Dei gratia
+              Brittannie dux</seg>, <seg function="dispositio">amore Dei et sancti Michaelis de
+              Monte monachorumque ejusdem archangeli ductus, dono et concedo Deo et eidem archangelo
+              et sibi servientibus, pro salute animę meae, et uxoris mee, et pro anima Alanni patris
+              mei, et pro animabus antecessorum meorum, piscatoriam quę dicitur <foreign
+                xml:lang="fro">Vereis</foreign>, et insulam quę dicitur Trencata. </seg><seg
+              function="corroboratio">Et ut hęc donatio inconvulsa permaneat, sign<mod
+                type="substitution">a</mod><note subtype="suppression" type="apparat"><p>signu <hi
+                    rend="italic">a. c.</hi></p></note> sancte crucis firma<pb n="78r"/>re studui,
+              et baronibus meis firmandam tradidi.</seg>
+            <seg function="subscriptions">S. Conani comitis, S. Bricii presulis Nannetensis, S.
+              Symonis filii Bernardi, S. Pagani filii Rotaldi, S. Gaufredi de Laguircha, S.
+              Guillelmi dapiferi, S. Hervei capellani, S. <foreign xml:lang="fro">Hermer</foreign>,
+              S. <foreign xml:lang="fro">Guiho</foreign> famuli comitis, S. Oliverii de Varesna, S.
+              Viviani de Marcio. Hanc donationem concesserunt et confirmaverunt Mathildis comitissa
+              et Hadvisa, soror comitis Conani : S. Comitisse, S. Hadvise.</seg></p>
+        </body>
+      </text>
+      <text xml:id="budelel" n="10">
+        <front>
+          <titlePart type="Charte">De Budelel</titlePart>
+
+          <docDate>
+            <date from="1121" notAfter="1123-10-16">[1121 - 1123, 16 octobre...]</date>
+            <placeName ref="#andelle">Perrier-sur-Andelle</placeName>
+          </docDate>
+
+          <div subtype="notification" type="Analyse">
+            <p><persName ref="#henribeauclerc" type="emetteur">Henri Ier Beauclerc</persName> a
+              donné douze arpents de terre rapportant douze livres de rente (<hi rend="normal"
+                >librata</hi>) à <placeName ref="#budleigh">Budleigh dans le Devon</placeName>, en
+              échange des <placeName ref="#berkshire">Eglises de Wargrave et Cholsey dans le
+                Berkshire</placeName> qui appartenaient au Mont et qu'il donna à l'<placeName
+                ref="#reading">Abbaye de Reading</placeName> fondée par lui en 1121. Fait sous
+              l'abbatiat de <persName ref="#roger" type="abbe">Roger II</persName>.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 104v. Rubrique : "<hi rend="italic">De Budelel</hi>"</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 177.</witness>
+
+                  <witness n="utile">b. J. H. Round (éd.), <hi rend="italic">Calendar of documents
+                      preserved in France... <hi rend="normal">vol. II, n°CLXXIII, p. 350-351,
+                        provenant d'une autre version de l'acte, copiée dans le cartulaire de
+                        l'abbaye de Reading : <orgName type="repository">B. L.</orgName>
+                        <idno>Egerton 3031</idno>.<seg> Cet acte est édité dans B. Kemp (éd.), <hi
+                            rend="normal"><hi rend="italic">Cartulary of Reading Abbey</hi></hi>,
+                          vol. II, n° 771, p. 72-73. </seg></hi></hi></witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>K. Keats-Rohan donne une datation correspondant à une période postérieure à la
+              fondation de Reading en 1121 et entre le moment où Henri quitte l'Angleterre le 11
+              juin 1123, et avant la destitution de l'abbé du Mont Roger II le 16 octobre 1123.
+              Henri I<hi rend="sup">er </hi>Beauclerc (1100 - 1135) est le fils de Guillaume le
+              Conquérant et frère de Guillaume II le Roux. Son coeur est enterré à Reading en
+              1135.</p>
+
+            <p>Geoffroy le Chancelier était Geoffroy le Roux, chancelier de 1123 jusqu'à sa
+              nomination comme évêque de Durham en 1133.</p>
+
+            <p>Guillaume de Tancarville était le fils de Raoul de Tancarville (n°5), chambellan de
+              Normandie, est un administrateur financier en Normandie sous Henri Beauclerc.</p>
+
+            <p>Geoffroy I<hi rend="sup">er</hi> de Clinton était un serviteur royal sous Henri
+              Beauclerc au service duquel il fit fortune, bienfaiteur de l'abbaye de Savigny et
+              fondateur du château et de l'abbaye de Kenilworth dans le Warwickshire.</p>
+
+            <p>Guillaume de Pont-de-l'Arche était shérif sous Henri I<hi rend="sup">er</hi>, à qui
+              il était réputé très loyal.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p><seg function="intitulatio">HENRICUS REX Anglorum, </seg><seg function="address"
+              >archiepiscopis, comitibus, baronibus et omnibus fidelibus suis tocius Anglie</seg>,
+              <seg function="salutatio">salutem</seg>. <seg function="notificatio">Sciatis</seg>,
+              <seg function="dispositio">me dedisse et concessisse ęcclesię sancti Michaelis de
+              Periculo Maris et monachis ibidem Deo servientibus, duodecim libratas terre in
+                <sic>Denevesira</sic>, in manerio meo de Budelega, in escambio duarum ecclesiarum
+              suarum de Walegrava et de Calsia, quas dedi et concessi ęcclesie de <foreign
+                xml:lang="fro">Radinguis</foreign> in elemosina. Et volo et firmiter precipio, ut
+              teneant ita bene et in pace, et honorifice, et quiete, sicut umquam melius, et
+              honorificentius, et quietus tenuerunt ecclesias predictas.</seg>
+            <seg function="witnessList">Testes : Johanne episcopo Luxcu'<note subtype="abbreviation"
+                type="apparat"><p>Luxcu' <hi rend="italic">est abrégé</hi>, <hi rend="italic"
+                    >peut-être pour</hi>
+                  <hi rend="italic"><hi rend="normal">Lexoviensi</hi>, qui indiquerait qu'il s'agit
+                    de Jean I<hi rend="sup">er</hi>, évêque de Lisieux.</hi></p></note> et
+                Gaufred<mod type="substitution">o</mod><note subtype="addition" type="apparat"
+                  ><p>Gaufredii <hi rend="italic">a. c.</hi></p></note> cancellario, et comite<note
+                subtype="addition" type="apparat"><p>comes <hi rend="italic">a. c., trace de
+                    grattage.</hi></p></note> Willelmo de Warenna, et Guillelmo de Tancarvilla, et
+              Gaufredo de Glintone, et Guillelmo de Ponte, <sic>Archardus</sic> et Thome de Sancto
+              Johanne</seg>. <seg function="place_dating">Apud Pirarios super Andelam</seg>.</p>
+        </body>
+      </text>
+      <text xml:id="livare" n="11">
+        <front>
+          <titlePart type="Charte">De Livare</titlePart>
+
+          <docDate>
+            <date notAfter="1100" notBefore="1082">[...1082 - 1100...]</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#geoffroy" type="emetteur">Geoffroy fils de Rivallon</persName> cède
+                l’<placeName ref="#levare">Eglise de Levaré</placeName> et ses revenus avec une
+              terre de deux charruées (<hi rend="normal">aratra</hi>) ainsi que trois emplacements
+              pour construire trois habitations pour des bourgeois dont le Mont percevra les
+              coutumes. Il permet aussi le panage des cochons (des moines seulement) dans toutes ses
+              forêts. Geoffroy sera admis au sein de la confraternité du Mont, y sera enseveli et
+              recevra les bénéfices spirituels comme un moine de l'abbaye ; et s’il meurt avant sa
+              femme, ses biens reviendront à l'abbaye, et inversement.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 63v. Rubrique : "<hi rend="italic"><hi rend="italic">De
+                        Livare".</hi></hi></witness>
+
+                  <witness n="utile">B. Copie dans <orgName type="repository">BnF,</orgName>
+                    <idno>ms lat. 10072</idno>, n°75.</witness>
+
+                  <witness n="utile">C. Copie dans <orgName type="repository">BnF,
+                      </orgName><idno>ms lat. 5430A</idno>, p. 146.</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 124.</witness>
+
+                  <witness n="utile">b. B. de Broussillon (éd.), <hi rend="italic">Cartulaire de
+                      Saint-Michel-de-l’Abbayette</hi>... n°7, depuis l'original A perdu.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Geoffroy fils de Rivallon est peut-être le fils cadet de Rivallon de Dol (n°17). Vers
+              1082, il était au service du comte de Mortain, Robert. Rivallon de Dol a soutenu les
+              Normands en 1064 (n°17). Main II avait reconnu la suzeraineté des Normands sur sa
+              terre dès 1050. En 1082, Robert était en charge du château de Gorron, sûrement
+              construit par les Normands, qui avaient construit un château à Ambrières. Ces deux
+              châteaux étaient dans le territoire des seigneurs de Mayenne. Les descendants de
+              Geoffroy furent surnommés les Gorron, en référence à leur office de garde dans le
+              château, mais leurs terres étaient plus loin à l'ouest, là où ils construisirent le
+              château de Saint-Berthevin-la-Tannière (n°25). Il n'y a pas de traces datables de
+              Geoffroy après 1100. Rivallon était le Rivallon de Gorron qui apparaît dans les
+              chartes de Savigny données par Hamelin de L'Ecluse, sa femme Adélaïde, son fils
+              Hamelin et son frère Ernald, avec Guillaume fils de Raoul de Gorron, vers 1116/1120.
+              Raoul de Gorron fut marié à Hersende, fille de Gautier de Mayenne. Leurs fils
+              Guillaume et Henri apparaissent comme bienfaiteurs du Mont au n°44. Le premier témoin,
+              Raoul, est sûrement l'héritier de Geoffroy, Raoul de Gorron.</p>
+
+            <p>Alfred Bozart était le fils de Bozart de Castellario, un vassal de Raoul I<hi
+                rend="sup">er</hi> de Fougères.</p>
+
+            <p>Geoffroy de Colombiers venait probablement de Colombier-du-Plessis, près de Gorron.
+              Autour de 1181, le pape Lucius a témoigné en faveur des moines contre Adam de <hi
+                rend="italic">Columberiis</hi>, qui avait revendiqué les droits de l'église de
+              Levaré et de Montenay.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B #b"/>
+
+          <p><seg function="intitulatio">EGO Gaufredus Rivallonis filius</seg>, <seg
+              function="dispositio">cupiens sancti archangeli Michaelis vivari meritis et
+              intercessionibus sibi ac suis monachis perpetuo in monte qui Tumba nuncupatur, Christo
+              famulantibus ex michi a Deo contraditis facultatibus, do ecclesiam de <foreign
+                xml:lang="fro">LIVARE</foreign> cum tota decima, omnibusque suis aliis
+                reditibus<note subtype="addition" type="apparat"><p>reditibus <hi rend="italic">a.
+                    c.</hi></p></note> qui mei juris fore noscuntur, et terram ad duo aratra eam
+              sufficienter ex collentia. Addo tres soli areas ad trium burgensium domos faciendas,
+              qui sancti Michaelis cum eorum consuetudinibus sint. Concedo etiam pascua omnibus
+              omnium silvarum mearum, ad solummodo proprios eorumdem monachorum porcos alendos,
+              absque ulla calumpni et contradictione. Hoc autem ideo eidem beato Michaele archangelo
+              ac sibi famulantibus concessi qua eorum societatem tali conventione accepi, ut
+              consorte omnium mortalium <pb n="64r"/>hominem exiero corpus meum, huc deferatur atque
+              ab eis sepeliatur, atque deinceps uti pro eorum fratre de me agatur. Si autem superno
+              Opifici placuerit, ut ego ante uxorem moriar, omnem meam partem substantiae meę do et
+              concedo. Quod et de uxore mea itidem fieri volo.</seg>
+            <seg function="witnessList">Testes autem hujus meę donationis extant : Radulfus,
+              Gaufredus de Columbieris, Hamelinus, Rogerius filius Adelardi, Harduinus de Lassal<mod
+                type="substitution">a</mod><note subtype="suppression" type="apparat"><p>Lassalo <hi
+                    rend="italic">a. c.</hi></p></note>, Rogerius clericus, Alfredus <foreign
+                xml:lang="fro">Botzart.</foreign></seg></p>
+        </body>
+      </text>
+      <text xml:id="broeladrio" n="12">
+        <front>
+          <titlePart type="Notice">De Sancto Broeladrio</titlePart>
+
+          <docDate>
+            <date notAfter="1149" notBefore="1131-02-05">[...1131, 5 février - 1149, 8
+              mai...]</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#elias" type="emetteur">Elias Boterat</persName> et ses deux plus
+              vieux fils ont rendu, sur l'autel de l'abbaye et la relique de saint Aubert, la terre
+              de <placeName ref="#longis">Longis Sulcis</placeName>, de <placeName ref="#curtis"
+                >Curtis Sulcis</placeName> (?) et la dîme de leurs moulins, celle des vignes qui
+              étaient un verger (<hi rend="normal">virgultum</hi>) avant, ainsi que la terre de
+                <placeName ref="#torpol">Torpol</placeName>, douze acres de terre qui jouxtent les
+              cultures de l'abbaye à <placeName ref="#broladre">Saint-Broladre</placeName>, trois
+              maisons dans ce village, et les revenus de l'église de ce lieu, qu'il avait eus en
+              héritage par son père. Il ajoute aussi, pour le salut de l'âme de son père, une acre
+              de prés.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 106v. Rubrique : "<hi rend="italic">De Sancto
+                    Broeladrio</hi>".</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 180.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Elias Boterat était le successeur de Geoffroy, fils de Tréhan, fils de Brien de
+              Saint-Broladre (n°20 et 55). Sa donation confirme celle de son père Geoffroy, liée à
+              la donation originale de Tréhan (n°20), datée de 1081. La charte de Tréhan (n°55) est
+              datée aussi d'environ 1075 - 1081. K. Keats-Rohan la date de l'abbatiat de Bernard du
+              Bec (5 février 1131 - 8 mai 1149) car la confirmation est faite sur la relique de
+              saint Aubert, pratique instaurée par ce dernier. Cela pourrait de plus correspondre à
+              deux générations après Tréhan.</p>
+
+            <p>Pas de clause de corroboration ni de témoin ; l'acte se situe à la fin du cartulaire
+              (n°113 sur 118).</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p>
+            <seg function="dispositio">HAEC sunt dona patris sui et antecessorum suorum quę <foreign
+                xml:lang="fro">Helyas</foreign>
+              <foreign xml:lang="fro">Boterat</foreign> confirmavit, quando quedam eorum que diu
+              detinuerat, super altare sancti Michaelis per brachium sancti Autberti, ipse et duo
+              filii majores natu Deo et monachis sancti Michaelis reddidit terram de Longis Sulcis
+              et de Curtis Sulcis, et decimam molendini sui et vinee quę prius virgultum fuerat, et
+              terram de <foreign xml:lang="fro">Torpol</foreign>, et duodecim acras terre quę
+              junguntur culture sancti Michaelis ad sanctum Broeladrium, et tres maisuras in eadem
+              villa, et quecumque jure hereditario in ecclesia ejusdem ville sibi contingebant. Hęc
+              reddidit, et pro anima patris sui unam acram prati dedit.</seg>
+          </p>
+        </body>
+      </text>
+      <text xml:id="cruce" n="13">
+        <front>
+          <titlePart type="Notice">Secunda carta de Cruce</titlePart>
+
+          <docDate>
+            <date notAfter="1149-05-08" notBefore="1131">[...1131 - 1149, 8 mai...]</date>
+          </docDate>
+
+          <div subtype="règlement_conflit" type="Analyse">
+            <p><persName ref="#pierre" type="emetteur">Pierre de
+                Saint-Hilaire(-du-Harcouët)</persName> a renoncé à ses revendications sur <placeName
+                ref="#croix">Le village de La Croix-Avranchin</placeName>, qu'il avait à de
+              nombreuses reprises pillé, raison pour laquelle l'abbaye l'avait menacé
+              d'excommunication plusieurs fois. Accompagné de ses vassaux, il vint au Mont jurer sur
+              l'autel et sur la relique de saint Aubert de renoncer au village. Il respecta son
+              serment jusqu'à la mort d'Henri [I<hi rend="sup">er</hi> Beauclerc], mais le viola
+              juste après, avançant qu'il avait fait le serment plus par contrainte que par volonté.
+              Finalement, il jura de nouveau par la suite, de bon coeur. Les moines lui donnèrent
+              alors dix livres du Mans. Fait sous l'abbatiat de <persName ref="#bernard" type="abbe">Bernard du Bec</persName>.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 111r. Rubrique : "<hi rend="italic">Secunda carta de
+                    Cruce</hi>".</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 185.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>Pierre de Saint-Hilaire (apparaît dans les chartes vers 1135 - 1157) était l'un de
+              fils du vicomte Harcouët fils d'Eudes de Saint-Hilaire (actif vers 1094 - 1030), connu
+              aussi sous le nom de "de Saint-James". Dans les chartes du prieuré de Marmoutier à
+              Sacey, l'on apprend qu'Harscouët était le neveu de Robert vicomte de Boucey, dont le
+              petit-fils a épousé une fille d'Hugues fils de Rorgo de Sacey. Pierre a épousé une
+              femme nommée Assillita et fut le père d'Harcouët, James, Henri et Philippe. Harcouët,
+              le père de Pierre, avait usurpé des biens de l'abbaye à La Croix-Avranchin à la fin du
+                XI<hi rend="sup">e</hi> siècle. L'abbé Roger I<hi rend="sup">er</hi> avait donc
+              appelé Urbain II, qui avait instruit Turgis l'évêque d'Avranches pour s'occuper de
+              l'affaire. Harcouët n'étant pas apparu à son procès en 1095, le pape Calixte II
+              ordonna de nouveau à l'évêque Turgis de s'en occuper en 1119, concernant La
+              Croix-Avranchin, Villiers et Balland. Cette charte est donc la renonciation demandée.
+              Des chartes de Pierre de Saint-Hilaire-du-Harcouët pour le prieuré de Pontorson sont
+              listées dans <orgName type="repository">Bibl. mun. Avranches</orgName>, <idno>ms.
+                211</idno>, f. 116v.</p>
+
+            <p>On retrouve les témoins Hugues <hi rend="italic">Testa</hi> (ex. n°87) et Turgis de
+                <hi rend="italic">Taneia</hi> (n°91), qui apparaissent dans des actes datant de
+              l'abbatiat de Bernard du Bec (1131 - 8 mai 1149), l'acte a donc probablement été
+              rédigé sous celui-ci. Letus <hi rend="italic">Infans</hi> et Guillaume <hi
+                rend="italic">Pulchra Barba</hi> apparaissent aussi par exemple dans le n°98, daté
+              de 1142 - 1149. K. Keats-Rohan avance une datation de 1135 - 1140.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p>
+            <seg function="preamble"><hi rend="litteraeElongatae">QUONIAM</hi> temporum volubilitate
+              multa oblivioni traduntur, nisi aut scripto aut fideli memorie commendata fuerint,
+              dignum duximus, <sic>ut</sic> quę nostris facta sunt temporibus successioni nostre
+              presens pagina insinuet. </seg>
+            <seg function="narratio">Petrus igitur de Sancto Hylario, qui diu villam quę Crux
+              dicitur calumpniaverat, aliquociens vero sasiverat, depredaverat, hinc a monachis
+              sancti Michaelis quibus hanc violentiam intulerat frequenter excommunicatus. Sed
+              tandem divina <sic>ut</sic> estimo inspiratione compunctus, cum suis baronibus ex hac
+              calumpnia immo tirannide satis facturus, Montem Sancti Michaelis advenit.</seg>
+            <seg function="dispositio">Juravit etenim super altare sancti Michaelis et super
+              brachium sancti Autberti, se hanc calumpniam omnino dimisurum, neque ulterius se vel
+              aliquem heredum suorum in ea seu membris ejus ville aliquid clamaturum. Hoc juris
+              jurandum idemtidem fecerat, rege adhuc Henrico vivente, quod post mortem ejus
+              violavit, quia se magis coactum quam spontaneum id fecisse, pro testabatur et ideo
+              quod prius <pb n="111v"/>invitus, postea fecit voluntarius. Juravit cum eo Turgisus de
+              Taneia, Carpentarius suus miles. Pro hac dimissione et confirmatione, dederunt ei
+              monachi Petro scilicet decem libras cenomannensium. </seg>
+            <seg function="witnessList">Hii fuerunt testes ex parte monachorum : <foreign
+                xml:lang="fro">Rualen</foreign>
+              <foreign xml:lang="fro">Calcebos</foreign>, Hugo <foreign xml:lang="fro"
+                >Testa</foreign>, Rotbertus de Monasterio, Tancredus, Ernulfus de <foreign
+                xml:lang="fro">Stampis</foreign>, Lucas filius ejus, Letus Infans, Rotbertus
+                <foreign xml:lang="fro">Macerot</foreign>, Guillelmus Pulchra Barba, Bernerius
+              frater ejus, Nicholaus filius Omenes, Rotbertus rusticus, et multi alii.</seg>
+          </p>
+        </body>
+      </text>
+      <text xml:id="rainaldi" n="14">
+        <front>
+          <titlePart type="Notice">De terra Rainaldi filii Hugonis</titlePart>
+
+          <docDate>
+            <date notAfter="1149-05-08" notBefore="1131-02-05">[...1131, 5 février - 1149, 8
+              mai...]</date>
+          </docDate>
+
+          <div subtype="donation" type="Analyse">
+            <p><persName ref="#renaud" type="emetteur">Renaud, fils d'Hugues</persName>, sentant sa
+              mort venir et pour le salut de son âme, a donné une terre qu'il tenait de son héritage
+              à <placeName ref="#guernesey">Guernesey</placeName>, qu'il avait précédemment mise en
+              gage pour cent sous du Mans, avec l'assentiment de sa femme, de ses deux filles et de
+              son beau-fils Richard.</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 87v. Rubrique : "<hi rend="italic">De terra Rainaldi filii
+                      Hugonis</hi>".</witness>
+
+                  <witness n="utile">B. Copie de l'original par G. de Beausse depuis <orgName
+                      type="repository">Arch. dép. de la Manche série H</orgName>, <idno>(non
+                      classé)</idno>.</witness>
+
+                  <witness n="utile">C. Copie dans <orgName type="repository">BnF,</orgName>
+                    <idno>ms lat. 10072</idno>, n°77.</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 156.</witness>
+
+                  <witness n="utile">b. Société jersiaise, <hi rend="italic">Cartulaire de
+                      Jersey...</hi> n°118, p. 187-188.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>K. Keats-Rohan avance cette datation à partir des témoins Rivallon <hi rend="italic"
+                >Calcebos</hi> et Hugues <hi rend="italic">Testis</hi> que l'on retrouve à l'acte
+              n°85 par exemple, dans lequel Bernard du Bec, abbé du 5 février 1131 au 8 mai 1149,
+              est présent.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p>
+            <seg function="notificatio">NOVERINT tam presentes quam futuri, </seg>
+            <seg function="dispositio">quam Rainaldus, filius Hugonis, terram quam jure hereditario
+              in <foreign xml:lang="fro">Grenereio</foreign> possidebat, monachis sancti Michaelis
+              de Monte invadimoniaverit pro centum solidis cenomannensium, tali videlicet pacto, ut
+              si vel ipse vel aliquis heredum suorum, eosdem nummos redderet, terram suam liberam et
+              quietam haberet. Sed cum non post multum tempus, isdem Rainaldus infirmaretur et in
+                gra<pb n="88r"/>vescente incommodo ad extrema duceretur, pro Dei amore et anime sue
+              redemptione, <sic>eandem</sic> terram consensu uxoris sue quę presens aderat, Deo et
+              sancto Michaeli sibique famulantibus monachis, concessit et in perpetuum habendam
+              contulit.</seg>
+            <seg function="corroboratio">Hujus donationis presbiter qui tunc confessum ejus faciebat
+              testis fidelissimus permaneret, hoc quoque filia ejus <foreign xml:lang="fro"
+                >Aales</foreign> scilicet et Richardus, alterius filie ejus maritus, pro uxore sua
+              concesserunt. </seg>
+            <seg function="witnessList">Prime donationis quam quidem Rainaldus fecerat, testes sunt
+              hi : Johannes presbiter, Radulfus homo ejus de Donvilla et Rogerius homo ejus.
+              Concessionis vero quam postmodum filie ejusdem Rainaldi fecerunt, testes sunt hi :
+              Rivallo <foreign xml:lang="fro">Calcebos</foreign>, Hugo <foreign xml:lang="fro"
+                >Testii</foreign>, Sangualo et multi alii.</seg>
+          </p>
+        </body>
+      </text>
+      <text xml:id="gohere3" n="15">
+        <front>
+          <titlePart type="Charte">Item de eodem (de Gohere 2)</titlePart>
+
+          <docDate>
+            <date notAfter="1079" notBefore="1097">[...1079 - 1097...]</date>
+          </docDate>
+
+          <div subtype="autre" type="Analyse">
+            <p>Sur la demande de ses frères Hugues et Godeschal, de sa femme Agnès et du moine
+              Robert, <persName ref="#eudesgod" type="emetteur">Eudes Godeschal</persName> renonce
+              aux revendications qu'il avait sur le <placeName ref="#gohory">Prieuré de
+                Gohory</placeName> concernant les chemins de terre ? (de itineribus terre).</p>
+          </div>
+
+          <div type="Tableau_de_la_tradition">
+            <div type="Tradition">
+              <listWit>
+                <listWit n="Copies_manuscrites">
+                  <witness n="utile">A. Copie dans le Cartulaire du Mont Saint-Michel, <orgName
+                      type="repository">Bibliothèque municipale d'Avranches</orgName>, <idno>ms
+                      210</idno>, f. 103v. Rubrique : "<hi rend="italic">Item de
+                    eodem</hi>".</witness>
+                </listWit>
+
+                <listWit n="Éditions">
+                  <witness n="utile">a. Katharine S. B. Keats-Rohan, <hi rend="italic">The Cartulary
+                      of the Abbey of Mont-Saint-Michel</hi>... p. 176.</witness>
+                </listWit>
+              </listWit>
+            </div>
+          </div>
+
+          <div type="Dissertation_critique">
+            <p>On retrouve le moine Robert aux chartes n°103 et 104, datées d'entre 1079 et 1097. K.
+              Keats-Rohan la place autour de 1100.</p>
+          </div>
+        </front>
+
+        <body xml:lang="la">
+          <witDetail wit="#B"/>
+
+          <p>
+            <seg function="intitulatio">EGO Odo <foreign xml:lang="fro">Godescal</foreign>, </seg>
+            <seg function="dispositio">rogatu et requisitione fratrum meorum Hugonis videlicet et
+                <foreign xml:lang="fro">Godescal</foreign>, conjugisque meę Agnetis et
+                <sic>donni</sic> Rotberti monachi, concedo Deo sanctoque Michaeli vicariam de
+              itineribus terre illorum quam super eos calumpniabar.</seg>
+            <seg function="witnessList">Cui concessioni interfuerunt Gradulfus dapifer Odonis,
+              Turpinus prepositus monachorum.</seg>
+          </p>
+        </body>
+      </text>
+    </group>
+  </text>
+</TEI>
+
