@@ -11,7 +11,7 @@ Dans le terminal (Linux ou macOS)
   
   * Installer l'environnement virtuel :
   
-    * Vérifier que la version de Python est bien 3.x : ```python --version```;
+    * Vérifier que la version de Python est bien 3.x : ```python3 --version```;
     
     * Aller dans le dossier : ```cd CartulaireMSM```;
     
@@ -23,9 +23,9 @@ Dans le terminal (Linux ou macOS)
     
     * Flask et lxml : ```pip3 install flask==1.1.2``` et ```pip3 install lxml==4.5.1``` ;
     
-    * SQLAlchemy : ```pip install flask_sqlalchemy==2.5.1``` ;
+    * SQLAlchemy : ```pip3 install flask_sqlalchemy==2.5.1``` ;
     
-    * Vérifier que tout est installé : ```pip freeze``` ;
+    * Vérifier que tout est installé : ```pip3 freeze``` ;
     
     * Sortir de l'environnement : ```deactivate``` ;
 
