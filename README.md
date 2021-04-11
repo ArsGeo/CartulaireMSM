@@ -13,7 +13,7 @@ Dans le terminal (Linux ou macOS)
   
     * Vérifier que la version de Python est bien 3.x : ```python --version```;
     
-    * Aller dans le dossier : ```cd Cartulaire```;
+    * Aller dans le dossier : ```cd CartulaireMSM```;
     
     * Installer l'environnement : ```python3 -m venv [nom de l'environnement]```.
   
