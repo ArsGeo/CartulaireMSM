@@ -10,7 +10,7 @@ def creation_database(fichier_xml):
 
 
 	"""Cette fonction permet de créer une base de données avec les informations issues du fichier xml 
-		contenant le corpus des actes (xml_file).
+		contenant le corpus des actes (fichier_xml).
 
 		- On définit des listes vides correspondant aux colonnes de la base, et un compteur n,
 		correspondant aux id des actes.
@@ -20,15 +20,15 @@ def creation_database(fichier_xml):
 		- Le compteur n augmente de un à chaque itération, les listes sont complétées, 
 		n permet d'indiquer l'id des actes dans le document XML. 
 
-		-Chaque élément à ajouter dans les colonnes est indiqué grâce à un chemin xpath qui inclut, 
+		- Chaque élément à ajouter dans les colonnes est indiqué grâce à un chemin xpath qui inclut, 
 		à la place du numéro de l'acte, le compteur n. La méthode .xpath() renvoyant un liste, 
 		on ajoute uniquement le premier élément de la liste pour ne pas que la liste conserve 
 		les éléments précédents (des autres textes) et éviter des erreurs lors de l'injection.
 
-		L'ancienne base est détruite grâce à la méthode .drop_all(), puis une nouvelle
+		- L'ancienne base est détruite grâce à la méthode .drop_all(), puis une nouvelle
 		est créée à chaque démarrage de l'application avec .create_all().
 
-		A chaque itération, le compteur n et l'entrée de chaque liste avec comme index n - 1
+		- A chaque itération, le compteur n et l'entrée de chaque liste avec comme index n - 1
 		(puisque le premier index d'une liste est 0 et que le compteur n commence à 1) 
 		sont ajoutés dans la table Acte grâce à la méthode .add().
 
