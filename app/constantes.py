@@ -1,6 +1,6 @@
 from lxml import etree
 
-#On parse les différentes feuilles xsl pour qu'elles soient lisibles par l'ORM
+# On parse les différentes feuilles xsl grâce à la méthode .parse() de etree.
 
 corpus_xml_parsed = etree.parse("app/static/xml/actes_msm.xml")
 
